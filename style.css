@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1{
+    font-size: 2em;
+    cursor: pointer;
+    
+    color: rgb(229, 232, 245);
+}
+header h1:hover{
+    text-shadow: 10px 0px 50px rgba(40, 89, 253, 0.651),
+                 -10px 0px 50px rgba(249, 126, 231, 0.9)
+                 ;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    
+    
+}
+/* header nav a.active{
+    background: rgb(99, 41, 233);
+    padding: 10px 20px;
+    border-radius:20px ;
+} */
+
+header nav a:hover{
+    background: rgb(99, 41, 233);
+    padding: 10px 20px;
+    border-radius:20px ;
+}
+
+header nav:hover > a:not(:hover){
+    background: none;
+}
+.home{
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, rgb(196, 209, 241), rgb(179, 200, 246));
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.home img{
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    pointer-events: none;
+    
+    
+}
+.home .title{
+    position: absolute;
+    font-size: 5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(224, 228, 241);
+}
+.about{
+     
+    padding: 50px;
+    background:#3B3291;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+.about h1{
+    font-size: 3em;
+    color: rgb(143, 162, 245);
+    text-align: center;
+    margin-top:50px;
+    
+    margin-bottom:50px ;
+    
+}
+.about p{
+    font-size: 1.2em;
+    
+    line-height: 1.6;
+    
+    
+    margin: 0 auto;
+}
+
